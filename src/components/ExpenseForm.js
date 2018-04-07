@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
 
 const now = moment();
 
@@ -22,12 +21,17 @@ export default class ExpenseForm extends React.Component {
       const description = e.target.value;
       this.setState(() => ({description}));
     };
-    // !!!Note the difference between the function above and below!!!!
-    // Either is acceptable...
+
     onNoteChange = (e) => {
-      e.persist();
-      this.setState(() => ({note: e.target.value}));
+      const description = e.target.value;
+      this.setState(() => ({note: description}));
     };
+    // !!!Note the difference between the function above and below!!!!
+    // Either is acceptable...OR NOT...THE STYLE BELOW WORKED BUT WOULD NOT PASS TESTING
+    // onNoteChange = (e) => {
+    //   e.persist();
+    //   this.setState(() => ({note: e.target.value}));
+    // };
 
     onAmountChange = (e) => {
       const amount = e.target.value;
@@ -52,7 +56,6 @@ export default class ExpenseForm extends React.Component {
       e.preventDefault();
       if (!this.state.description || !this.state.amount) {
         this.setState(() => ({ error: 'Please provide the description and amount' }));
-        console.log('its mepty or empty');
       } else {
       this.setState(() => ({ error: '' }));
       this.props.onSubmit({
@@ -62,7 +65,6 @@ export default class ExpenseForm extends React.Component {
         note: this.state.note
 
       });
-      console.log('submmitttted');
       }
     };
 
