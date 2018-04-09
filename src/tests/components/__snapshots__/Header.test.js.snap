@@ -3,7 +3,7 @@
 exports[`should render Header correctly 1`] = `
 <header>
   <h1>
-    Expensify APP Header
+    Expensify
   </h1>
   <p>
     <NavLink
