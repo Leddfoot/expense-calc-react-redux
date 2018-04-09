@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js test
+  C:\Program Files\nodejs\node.exe C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js remove numeral
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Vader\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Vader\AppData\Local\Programs\Python\Python35-32\;C:\Users\Vader\AppData\Local\Microsoft\WindowsApps;C:\Users\Vader\AppData\Roaming\Dashlane\4.6.6.23032\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Vader\AppData\Roaming\Dashlane\4.8.5.35155\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Vader\AppData\Roaming\Dashlane\4.8.5.35155\ucrt;C:\Users\Vader\AppData\Local\atom\bin;C:\Users\Vader\AppData\Local\Microsoft\WindowsApps;C:\Users\Vader\AppData\Roaming\npm;C:\Program Files\Heroku\bin
@@ -6597,17 +6597,10 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c jest --config=jest.config.json
-  Directory: C:\Users\Vader\Documents\react_Projects\expensify-app
-  Output:
-  
-      at ProcessTermError.MessageError (C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  Error: This module isn't specified in a manifest.
+      at new MessageError (C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at Object.<anonymous> (C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:60445:15)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
