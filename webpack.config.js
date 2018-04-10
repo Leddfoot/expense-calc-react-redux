@@ -17,7 +17,7 @@ if(process.env.NODE_ENV === 'test') {
 module.exports = (env,) => {
   const isProduction = env === 'production';
   const CSSExtract = new ExtractTextPlugin('styles.css');
-  console.log('env', env);
+
   return {
     entry: './src/app.js',
     output: {
