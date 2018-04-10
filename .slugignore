@@ -1,0 +1,2 @@
+# This is necessary for deployment on Heroku to work
+package-lock.json
