@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js test --watch
+  C:\Program Files\nodejs\node.exe C:\Users\Vader\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev-server
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Vader\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Vader\AppData\Local\Programs\Python\Python35-32\;C:\Users\Vader\AppData\Local\Microsoft\WindowsApps;C:\Users\Vader\AppData\Roaming\Dashlane\4.6.6.23032\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Vader\AppData\Roaming\Dashlane\4.8.5.35155\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Vader\AppData\Roaming\Dashlane\4.8.5.35155\ucrt;C:\Users\Vader\AppData\Local\atom\bin;C:\Users\Vader\AppData\Local\Microsoft\WindowsApps;C:\Users\Vader\AppData\Roaming\npm;C:\Program Files\Heroku\bin
@@ -37,7 +37,6 @@ npm manifest:
       "babel-preset-env": "1.5.2",
       "babel-preset-react": "6.24.1",
       "css-loader": "0.28.4",
-      "dotenv": "^5.0.1",
       "express": "4.15.4",
       "extract-text-webpack-plugin": "3.0.0",
       "firebase": "4.2.0",
@@ -64,6 +63,7 @@ npm manifest:
     },
     "devDependencies": {
       "cross-env": "5.0.5",
+      "dotenv": "4.0.0",
       "enzyme": "3.0.0",
       "enzyme-adapter-react-16": "1.0.0",
       "enzyme-to-json": "3.0.1",
@@ -2031,9 +2031,9 @@ Lockfile:
       dom-serializer "0"
       domelementtype "1"
   
-  dotenv@^5.0.1:
-    version "5.0.1"
-    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
+  dotenv@4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
   
   ecc-jsbn@~0.1.1:
     version "0.1.1"
@@ -6739,7 +6739,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c jest --config=jest.config.json --watch
+  Arguments: /d /s /c webpack-dev-server
   Directory: C:\Users\Vader\Documents\react_Projects\expensify-app
   Output:
   

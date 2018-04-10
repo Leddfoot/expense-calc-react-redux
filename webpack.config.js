@@ -6,10 +6,10 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // SUPER IMPORTANT... IF RECREATING THIS BELOW, THE VALUES BELOW ARE IN FILES IN A SEPARATE location
 // THESE FILES SHOULD THEN BE IGNORED WITH GIT TO MAINTAIN SECURITY
-if(process.env.NODE_ENV === 'test') {
-  require('dotenv').config({ path: '.env.test'});
+if (process.env.NODE_ENV === 'test') {
+  require('dotenv').config({ path: '.env.test' });
 } else if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config({ path: '.env.development'});
+  require('dotenv').config({ path: '.env.development' });
 }
 
 //process.env.NODE_ENV
@@ -51,9 +51,9 @@ module.exports = (env,) => {
     },
     plugins: [
       CSSExtract,
-      new webpack.DefinePlugIn({
+      new webpack.DefinePlugin({
         'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
-        'process.env.FIREBASE__AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE__AUTH_DOMAIN),
+        'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
         'process.env.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL),
         'process.env.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
         'process.env.FIREBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET),
