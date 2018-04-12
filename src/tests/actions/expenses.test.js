@@ -14,7 +14,7 @@ import expenses from '../fixtures/expenses.js';
 import database from '../../firebase/firebase';
 
 const uid = 'this is my testuid';
-const defaultAuthState = { auth: { uid } };
+const awwadefaultAuthState = { auth: { uid } };
 const createMockStore = configureMockStore([thunk]);
 
 beforeEach((done) => {
